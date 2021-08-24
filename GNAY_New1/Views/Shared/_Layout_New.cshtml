@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    @*<meta name="description" content="GNAY are providing wide range of villas in Greater Noida. There are different categories of same size avalilable from which customer can choose his design. GNAY are Opposite to upcoming metro, approachable from Ghaziabad, Noida, Greater Noida, FNG and Delhi." />
+        <meta name="keywords" content="smartvillas.in, smartvillas, GNAY, GNAY in noida, independent villas in noida, independent villas in greater noida, independent villas, GNAY in greater noida, GNAY new launch, Pratishtha Group, Pratishtha Group new launch, villas, villas in noida, villas in greater noida, villas near delhi, villas in NCR, NCR best villas, NCR new villas, GNAY in NCR, GNAY NCR " />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">*@
+    <meta name="author" content="GNAY by Makaan Developers group.">
+    <title>GNAY | Greater Noida Awas Yojna</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="~/Content/css/main.css" rel="stylesheet">
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Content/css/animate-custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/modernizr.custom.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    @*  <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-56245969-3', 'auto');
+            ga('send', 'pageview');
+
+        </script>*@
+    <style>
+        .hidden {
+            visibility: hidden;
+        }
+
+        .visible {
+            visibility: visible;
+        }
+    </style>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            $('#myModal').modal('show');
+        });
+    </script>
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+    <div id="navbar-main">
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="/home"><i class="fa fa-location-arrow"></i>GNAY</a>
+                    <br />
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/home#about">About</a></li>
+                        <li><a href="/home#services">Project Details</a></li>
+                        @*<li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>*@
+                        <!--<li> <a href="#team" class="smoothScroll"> Team</a></li>-->
+                        <li><a href="/home#contact">Contact</a></li>
+                        <li><a href="/GNAY_Application/Create">Booking Form</a></li>
+                        @*<li><a target="_blank" href="~/Content/docs/Booking Form.pdf">Booking Form</a></li>*@
+                        @*<li><a href="default/draw/">Draw Results</a></li>*@
+                        <li>
+                            @Html.Partial("_LoginPartial")
+                        </li>
+                    </ul>
+
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+
+    @RenderBody()
+    @RenderSection("SPAViews", required: false)
+    <hr />
+    <div id="footerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8"><span class="copyright">Copyright &copy; 2017 Makaan Developers</span> </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+     ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script type="text/javascript" src="~/Content/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/retina.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="~/Content/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery-func.js"></script>
+
+    <script>
+        //var mobile1 = document.getElementById("mobileno");
+        //mobile1.addEventListener("keyup", function (event) {
+        //    if (mobile1.validity.patternMismatch) {
+        //        mobile1.setCustomValidity("Phone number should be numeric 10 digits.");
+        //    } else {
+        //        mobile1.setCustomValidity("");
+        //    }
+        //});
+
+        function SubmitQuery() {
+            //debugger;
+            var errormessage = "";
+            if ($("#name").val().trim() == "") {
+                errormessage = "Name Required.";
+            }
+            else if ($('#mobileno').val().trim() == "") {
+                errormessage = "Mobile No Required.";
+            }
+            else if ($('#mobileno').val().trim().length != 10) {
+                errormessage = "Mobile number should be of 10 digits.";
+            }
+            else if ($('#query').val().trim() == "") {
+                errormessage = "Please enter your query.";
+            }
+
+            if (errormessage != "") {
+                $('#divMessage').removeAttr("class");
+                $('#divMessage').attr("class", "alert alert-danger visible");
+                $("#divMessage").html(errormessage);
+                return;
+            }
+
+            //debugger;
+
+            $("#btnSubmitQuery").html('Processing..');
+            $.post("Default/SubmitQuery", { name: $("#name").val(), email: $("#email").val(), mobileno: $('#mobileno').val(), query: $('#query').val() }, function (data) {
+                //do whatever with the response
+                //debugger;
+                if (data != undefined && data.result == "submitted") {
+                    $('#divMessage').removeAttr("class");
+                    $('#divMessage').attr("class", "alert alert-info visible");
+                    $("#divMessage").html("Your message is submitted. Our team will contact you in less than 24 hours. Thanks !!");
+
+                    //clear text boxes
+                    $("#name").val("");
+                    $("#email").val("");
+                    $('#mobileno').val("");
+                    $('#query').val("");
+                }
+                else {
+                    $('#divMessage').removeAttr("class");
+                    $('#divMessage').attr("class", "alert alert-danger visible");
+                    $("#divMessage").html("Your message submission failed. Please try after some time.");
+                    //$("#divMessage").html(data.error);
+
+                }
+                $("#btnSubmitQuery").html('Submit');
+
+
+            });
+        }
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

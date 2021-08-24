@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/GNAY_New1/bin
+/GNAY_New1/Content/UserImages
+/GNAY_New1/obj
+/GNAY_New1/Properties/PublishProfiles
+/packages
+/GNAY_New1/GNAY_New1.csproj.user

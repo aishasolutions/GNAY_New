@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TorqueSolutionsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GNAY_Application">
+          <Key>
+            <PropertyRef Name="ApplicationNumber" />
+          </Key>
+          <Property Name="ApplicationNumber" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ApplicantName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="FatherName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Nationality" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="DOB" Type="date" Nullable="false" />
+          <Property Name="IsNRI" Type="bit" Nullable="false" />
+          <Property Name="PanNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Occupation" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Department" Type="varchar" MaxLength="50" />
+          <Property Name="AnnualIncome" Type="int" Nullable="false" />
+          <Property Name="EmailId" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="ContactNumber" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CommunicationAddress" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="CommunicationState" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CommunicationPIN" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PermanentAddress" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="PermanentState" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PermanentPIN" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="OfficeAddress" Type="varchar" MaxLength="500" />
+          <Property Name="OfficeState" Type="varchar" MaxLength="50" />
+          <Property Name="OfficePIN" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantApplicantName" Type="varchar" MaxLength="200" />
+          <Property Name="CoApplicantFatherName" Type="varchar" MaxLength="200" />
+          <Property Name="CoApplicantNationality" Type="varchar" MaxLength="20" />
+          <Property Name="CoApplicantDOB" Type="date" />
+          <Property Name="CoApplicantIsNRI" Type="bit" />
+          <Property Name="CoApplicantPanNo" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantOccupation" Type="varchar" MaxLength="100" />
+          <Property Name="CoApplicantDepartment" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantAnnualIncome" Type="int" />
+          <Property Name="CoApplicantEmailId" Type="varchar" MaxLength="200" />
+          <Property Name="CoApplicantContactNumber" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantCommunicationAddress" Type="varchar" MaxLength="500" />
+          <Property Name="CoApplicantCommunicationState" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantCommunicationPIN" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantPermanentAddress" Type="varchar" MaxLength="500" />
+          <Property Name="CoApplicantPermanentState" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantPermanentPIN" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantOfficeAddress" Type="varchar" MaxLength="500" />
+          <Property Name="CoApplicantOfficeState" Type="varchar" MaxLength="50" />
+          <Property Name="CoApplicantOfficePIN" Type="varchar" MaxLength="50" />
+          <Property Name="AppliedProject" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UnitType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CarpetAreaInFoot" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PaymentPlan" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="AmountPayable" Type="int" />
+          <Property Name="ApplicationPaymentID" Type="varchar" MaxLength="50" />
+          <Property Name="PaymentReceipt" Type="varchar" MaxLength="200" />
+          <Property Name="RefundAccNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RefundBankName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="RefundBankIFSC" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="IsFirstProperty" Type="bit" />
+          <Property Name="LoanAmountRequired" Type="int" />
+          <Property Name="MonthlyGrossIncome" Type="int" />
+          <Property Name="MonthlyNetIncome" Type="int" />
+          <Property Name="AnyPreviousLoan" Type="bit" />
+          <Property Name="PreviousLoanEMI" Type="int" />
+          <Property Name="PreviousLoanBalance" Type="int" />
+          <Property Name="ApplicationIPAddress" Type="varchar" MaxLength="50" />
+          <Property Name="ClubbedIncomeFamilyMemberName" Type="varchar" MaxLength="100" />
+          <Property Name="ClubbedmemberMonthlyNetIncome" Type="int" />
+          <Property Name="ClubbedmemberAnyPreviousLoan" Type="bit" />
+          <Property Name="ClubbedmemberPreviousLoanEMI" Type="int" />
+          <Property Name="ClubbedmemberPreviousLoanBalance" Type="int" />
+          <Property Name="EmployeeIDCopy" Type="varchar" MaxLength="200" />
+          <Property Name="PanCardCopy" Type="varchar" MaxLength="200" />
+          <Property Name="AddressProofCopy" Type="varchar" MaxLength="200" />
+          <Property Name="ApplicantPhoto" Type="varchar" MaxLength="200" />
+          <Property Name="CoApplicantPhoto" Type="varchar" MaxLength="200" />
+          <Property Name="DateOfSubmit" Type="datetime" />
+          <Property Name="IsReceptVerified" Type="bit" />
+          <Property Name="ReceptVerifiedBy" Type="nvarchar" MaxLength="256" />
+          <Property Name="LastModifiedDate" Type="datetime" />
+          <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="256" />
+          <Property Name="bookingamount" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="bookingamountpaid" Type="bit" />
+        </EntityType>
+        <EntityType Name="GNAYallotment">
+          <Key>
+            <PropertyRef Name="SNO" />
+          </Key>
+          <Property Name="SNO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FormNo" Type="varchar" MaxLength="50" />
+          <Property Name="RegNum" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ApplicantName" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="Sex" Type="varchar" MaxLength="10" />
+          <Property Name="S_W_D_of" Type="varchar" MaxLength="50" />
+          <Property Name="ApplicantAddress" Type="varchar" MaxLength="200" />
+          <Property Name="AllotedPlotNo" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="TorqueSolutionsModelStoreContainer">
+          <EntitySet Name="GNAY_Application" EntityType="Self.GNAY_Application" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GNAYallotment" EntityType="Self.GNAYallotment" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TorqueSolutionsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GNAY_Application">
+          <Key>
+            <PropertyRef Name="ApplicationNumber" />
+          </Key>
+          <Property Name="ApplicationNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ApplicantName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FatherName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Nationality" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DOB" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="IsNRI" Type="Boolean" Nullable="false" />
+          <Property Name="PanNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Occupation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Department" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AnnualIncome" Type="Int32" Nullable="false" />
+          <Property Name="EmailId" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CommunicationAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CommunicationState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CommunicationPIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PermanentAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PermanentState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PermanentPIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="OfficeAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="OfficeState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OfficePIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantApplicantName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantFatherName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantNationality" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantDOB" Type="DateTime" Precision="0" />
+          <Property Name="CoApplicantIsNRI" Type="Boolean" />
+          <Property Name="CoApplicantPanNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantOccupation" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantDepartment" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantAnnualIncome" Type="Int32" />
+          <Property Name="CoApplicantEmailId" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantContactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantCommunicationAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantCommunicationState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantCommunicationPIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantPermanentAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantPermanentState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantPermanentPIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantOfficeAddress" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantOfficeState" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantOfficePIN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AppliedProject" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="UnitType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CarpetAreaInFoot" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PaymentPlan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="AmountPayable" Type="Int32" />
+          <Property Name="ApplicationPaymentID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PaymentReceipt" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="RefundAccNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RefundBankName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RefundBankIFSC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IsFirstProperty" Type="Boolean" />
+          <Property Name="LoanAmountRequired" Type="Int32" />
+          <Property Name="MonthlyGrossIncome" Type="Int32" />
+          <Property Name="MonthlyNetIncome" Type="Int32" />
+          <Property Name="AnyPreviousLoan" Type="Boolean" />
+          <Property Name="PreviousLoanEMI" Type="Int32" />
+          <Property Name="PreviousLoanBalance" Type="Int32" />
+          <Property Name="ApplicationIPAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ClubbedIncomeFamilyMemberName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ClubbedmemberMonthlyNetIncome" Type="Int32" />
+          <Property Name="ClubbedmemberAnyPreviousLoan" Type="Boolean" />
+          <Property Name="ClubbedmemberPreviousLoanEMI" Type="Int32" />
+          <Property Name="ClubbedmemberPreviousLoanBalance" Type="Int32" />
+          <Property Name="EmployeeIDCopy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="PanCardCopy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="AddressProofCopy" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicantPhoto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="CoApplicantPhoto" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="DateOfSubmit" Type="DateTime" Precision="3" />
+          <Property Name="IsReceptVerified" Type="Boolean" />
+          <Property Name="ReceptVerifiedBy" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="LastModifiedDate" Type="DateTime" Precision="3" />
+          <Property Name="LastModifiedBy" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="bookingamount" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="bookingamountpaid" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="GNAYallotment">
+          <Key>
+            <PropertyRef Name="SNO" />
+          </Key>
+          <Property Name="SNO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FormNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RegNum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ApplicantName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Sex" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="S_W_D_of" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ApplicantAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="AllotedPlotNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="TorqueSolutionsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GNAY_Application" EntityType="Self.GNAY_Application" />
+          <EntitySet Name="GNAYallotments" EntityType="Self.GNAYallotment" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TorqueSolutionsModelStoreContainer" CdmEntityContainer="TorqueSolutionsEntities">
+          <EntitySetMapping Name="GNAY_Application">
+            <EntityTypeMapping TypeName="TorqueSolutionsModel.GNAY_Application">
+              <MappingFragment StoreEntitySet="GNAY_Application">
+                <ScalarProperty Name="bookingamountpaid" ColumnName="bookingamountpaid" />
+                <ScalarProperty Name="bookingamount" ColumnName="bookingamount" />
+                <ScalarProperty Name="ApplicationNumber" ColumnName="ApplicationNumber" />
+                <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="DOB" ColumnName="DOB" />
+                <ScalarProperty Name="IsNRI" ColumnName="IsNRI" />
+                <ScalarProperty Name="PanNo" ColumnName="PanNo" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="AnnualIncome" ColumnName="AnnualIncome" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="ContactNumber" ColumnName="ContactNumber" />
+                <ScalarProperty Name="CommunicationAddress" ColumnName="CommunicationAddress" />
+                <ScalarProperty Name="CommunicationState" ColumnName="CommunicationState" />
+                <ScalarProperty Name="CommunicationPIN" ColumnName="CommunicationPIN" />
+                <ScalarProperty Name="PermanentAddress" ColumnName="PermanentAddress" />
+                <ScalarProperty Name="PermanentState" ColumnName="PermanentState" />
+                <ScalarProperty Name="PermanentPIN" ColumnName="PermanentPIN" />
+                <ScalarProperty Name="OfficeAddress" ColumnName="OfficeAddress" />
+                <ScalarProperty Name="OfficeState" ColumnName="OfficeState" />
+                <ScalarProperty Name="OfficePIN" ColumnName="OfficePIN" />
+                <ScalarProperty Name="CoApplicantApplicantName" ColumnName="CoApplicantApplicantName" />
+                <ScalarProperty Name="CoApplicantFatherName" ColumnName="CoApplicantFatherName" />
+                <ScalarProperty Name="CoApplicantNationality" ColumnName="CoApplicantNationality" />
+                <ScalarProperty Name="CoApplicantDOB" ColumnName="CoApplicantDOB" />
+                <ScalarProperty Name="CoApplicantIsNRI" ColumnName="CoApplicantIsNRI" />
+                <ScalarProperty Name="CoApplicantPanNo" ColumnName="CoApplicantPanNo" />
+                <ScalarProperty Name="CoApplicantOccupation" ColumnName="CoApplicantOccupation" />
+                <ScalarProperty Name="CoApplicantDepartment" ColumnName="CoApplicantDepartment" />
+                <ScalarProperty Name="CoApplicantAnnualIncome" ColumnName="CoApplicantAnnualIncome" />
+                <ScalarProperty Name="CoApplicantEmailId" ColumnName="CoApplicantEmailId" />
+                <ScalarProperty Name="CoApplicantContactNumber" ColumnName="CoApplicantContactNumber" />
+                <ScalarProperty Name="CoApplicantCommunicationAddress" ColumnName="CoApplicantCommunicationAddress" />
+                <ScalarProperty Name="CoApplicantCommunicationState" ColumnName="CoApplicantCommunicationState" />
+                <ScalarProperty Name="CoApplicantCommunicationPIN" ColumnName="CoApplicantCommunicationPIN" />
+                <ScalarProperty Name="CoApplicantPermanentAddress" ColumnName="CoApplicantPermanentAddress" />
+                <ScalarProperty Name="CoApplicantPermanentState" ColumnName="CoApplicantPermanentState" />
+                <ScalarProperty Name="CoApplicantPermanentPIN" ColumnName="CoApplicantPermanentPIN" />
+                <ScalarProperty Name="CoApplicantOfficeAddress" ColumnName="CoApplicantOfficeAddress" />
+                <ScalarProperty Name="CoApplicantOfficeState" ColumnName="CoApplicantOfficeState" />
+                <ScalarProperty Name="CoApplicantOfficePIN" ColumnName="CoApplicantOfficePIN" />
+                <ScalarProperty Name="AppliedProject" ColumnName="AppliedProject" />
+                <ScalarProperty Name="UnitType" ColumnName="UnitType" />
+                <ScalarProperty Name="CarpetAreaInFoot" ColumnName="CarpetAreaInFoot" />
+                <ScalarProperty Name="PaymentPlan" ColumnName="PaymentPlan" />
+                <ScalarProperty Name="AmountPayable" ColumnName="AmountPayable" />
+                <ScalarProperty Name="ApplicationPaymentID" ColumnName="ApplicationPaymentID" />
+                <ScalarProperty Name="PaymentReceipt" ColumnName="PaymentReceipt" />
+                <ScalarProperty Name="RefundAccNo" ColumnName="RefundAccNo" />
+                <ScalarProperty Name="RefundBankName" ColumnName="RefundBankName" />
+                <ScalarProperty Name="RefundBankIFSC" ColumnName="RefundBankIFSC" />
+                <ScalarProperty Name="IsFirstProperty" ColumnName="IsFirstProperty" />
+                <ScalarProperty Name="LoanAmountRequired" ColumnName="LoanAmountRequired" />
+                <ScalarProperty Name="MonthlyGrossIncome" ColumnName="MonthlyGrossIncome" />
+                <ScalarProperty Name="MonthlyNetIncome" ColumnName="MonthlyNetIncome" />
+                <ScalarProperty Name="AnyPreviousLoan" ColumnName="AnyPreviousLoan" />
+                <ScalarProperty Name="PreviousLoanEMI" ColumnName="PreviousLoanEMI" />
+                <ScalarProperty Name="PreviousLoanBalance" ColumnName="PreviousLoanBalance" />
+                <ScalarProperty Name="ApplicationIPAddress" ColumnName="ApplicationIPAddress" />
+                <ScalarProperty Name="ClubbedIncomeFamilyMemberName" ColumnName="ClubbedIncomeFamilyMemberName" />
+                <ScalarProperty Name="ClubbedmemberMonthlyNetIncome" ColumnName="ClubbedmemberMonthlyNetIncome" />
+                <ScalarProperty Name="ClubbedmemberAnyPreviousLoan" ColumnName="ClubbedmemberAnyPreviousLoan" />
+                <ScalarProperty Name="ClubbedmemberPreviousLoanEMI" ColumnName="ClubbedmemberPreviousLoanEMI" />
+                <ScalarProperty Name="ClubbedmemberPreviousLoanBalance" ColumnName="ClubbedmemberPreviousLoanBalance" />
+                <ScalarProperty Name="EmployeeIDCopy" ColumnName="EmployeeIDCopy" />
+                <ScalarProperty Name="PanCardCopy" ColumnName="PanCardCopy" />
+                <ScalarProperty Name="AddressProofCopy" ColumnName="AddressProofCopy" />
+                <ScalarProperty Name="ApplicantPhoto" ColumnName="ApplicantPhoto" />
+                <ScalarProperty Name="CoApplicantPhoto" ColumnName="CoApplicantPhoto" />
+                <ScalarProperty Name="DateOfSubmit" ColumnName="DateOfSubmit" />
+                <ScalarProperty Name="IsReceptVerified" ColumnName="IsReceptVerified" />
+                <ScalarProperty Name="ReceptVerifiedBy" ColumnName="ReceptVerifiedBy" />
+                <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+                <ScalarProperty Name="LastModifiedBy" ColumnName="LastModifiedBy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GNAYallotments">
+            <EntityTypeMapping TypeName="TorqueSolutionsModel.GNAYallotment">
+              <MappingFragment StoreEntitySet="GNAYallotment">
+                <ScalarProperty Name="SNO" ColumnName="SNO" />
+                <ScalarProperty Name="FormNo" ColumnName="FormNo" />
+                <ScalarProperty Name="RegNum" ColumnName="RegNum" />
+                <ScalarProperty Name="ApplicantName" ColumnName="ApplicantName" />
+                <ScalarProperty Name="Sex" ColumnName="Sex" />
+                <ScalarProperty Name="S_W_D_of" ColumnName="S_W_D_of" />
+                <ScalarProperty Name="ApplicantAddress" ColumnName="ApplicantAddress" />
+                <ScalarProperty Name="AllotedPlotNo" ColumnName="AllotedPlotNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

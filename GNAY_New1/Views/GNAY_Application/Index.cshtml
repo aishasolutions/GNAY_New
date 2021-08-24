@@ -1,0 +1,480 @@
+﻿@model IEnumerable<GNAY_New1.GNAY_Application>
+<section class="about text-center">
+    <div class="container">
+        <div class="row">
+            <h3 style="margin-top:100px">Submitted Applications</h3>
+
+
+            <div class="col-md-12">
+                <div class="single-about-detail clearfix">
+                    <p>
+                        @Html.ActionLink("Create New", "Create")
+                    </p>
+                    <div style="overflow:auto">
+                        <table class="table">
+                            <tr>
+                                <th></th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ApplicationNumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IsReceptVerified)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ReceptVerifiedBy)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PaymentReceipt)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ApplicantName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.FatherName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Nationality)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.DOB)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IsNRI)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PanNo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Occupation)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Department)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AnnualIncome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmailId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ContactNumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CommunicationAddress)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CommunicationState)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CommunicationPIN)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PermanentAddress)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PermanentState)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PermanentPIN)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.OfficeAddress)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.OfficeState)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.OfficePIN)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantApplicantName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantFatherName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantNationality)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantDOB)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantIsNRI)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantPanNo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantOccupation)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantDepartment)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantAnnualIncome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantEmailId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantContactNumber)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantCommunicationAddress)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantCommunicationState)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantCommunicationPIN)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantPermanentAddress)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantPermanentState)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantPermanentPIN)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantOfficeAddress)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantOfficeState)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantOfficePIN)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AppliedProject)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.UnitType)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CarpetAreaInFoot)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PaymentPlan)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AmountPayable)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ApplicationPaymentID)
+                                </th>
+
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RefundAccNo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RefundBankName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RefundBankIFSC)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.IsFirstProperty)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.LoanAmountRequired)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MonthlyGrossIncome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MonthlyNetIncome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AnyPreviousLoan)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PreviousLoanEMI)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PreviousLoanBalance)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ApplicationIPAddress)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ClubbedIncomeFamilyMemberName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ClubbedmemberMonthlyNetIncome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ClubbedmemberAnyPreviousLoan)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ClubbedmemberPreviousLoanEMI)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ClubbedmemberPreviousLoanBalance)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.EmployeeIDCopy)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PanCardCopy)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.AddressProofCopy)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.ApplicantPhoto)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CoApplicantPhoto)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.DateOfSubmit)
+                                </th>
+
+                            </tr>
+
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.ApplicationNumber }) |
+                                        @Html.ActionLink("Details", "Details", new { id = item.ApplicationNumber }) |
+                                        @Html.ActionLink("Delete", "Delete", new { id = item.ApplicationNumber })
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ApplicationNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IsReceptVerified)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ReceptVerifiedBy)
+                                    </td>
+                                    <td>
+                                        <a target="_blank" href="@item.PaymentReceipt">Click</a>
+                                        @*@Html.DisplayFor(modelItem => item.PaymentReceipt)*@
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ApplicantName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.FatherName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Nationality)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.DOB)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IsNRI)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PanNo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Occupation)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Department)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AnnualIncome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.EmailId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ContactNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CommunicationAddress)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CommunicationState)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CommunicationPIN)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PermanentAddress)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PermanentState)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PermanentPIN)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.OfficeAddress)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.OfficeState)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.OfficePIN)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantApplicantName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantFatherName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantNationality)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantDOB)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantIsNRI)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantPanNo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantOccupation)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantDepartment)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantAnnualIncome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantEmailId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantContactNumber)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantCommunicationAddress)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantCommunicationState)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantCommunicationPIN)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantPermanentAddress)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantPermanentState)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantPermanentPIN)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantOfficeAddress)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantOfficeState)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CoApplicantOfficePIN)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AppliedProject)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.UnitType)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CarpetAreaInFoot)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PaymentPlan)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AmountPayable)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ApplicationPaymentID)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RefundAccNo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RefundBankName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RefundBankIFSC)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.IsFirstProperty)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.LoanAmountRequired)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MonthlyGrossIncome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MonthlyNetIncome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.AnyPreviousLoan)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PreviousLoanEMI)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PreviousLoanBalance)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ApplicationIPAddress)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ClubbedIncomeFamilyMemberName)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ClubbedmemberMonthlyNetIncome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ClubbedmemberAnyPreviousLoan)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ClubbedmemberPreviousLoanEMI)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.ClubbedmemberPreviousLoanBalance)
+                                    </td>
+                                    <td>
+                                        <a target="_blank" href="@item.EmployeeIDCopy">Click</a>
+                                        @*@Html.DisplayFor(modelItem => item.EmployeeIDCopy)*@
+                                    </td>
+                                    <td>
+                                        <a target="_blank" href="@item.PanCardCopy">Click</a>
+                                        @*@Html.DisplayFor(modelItem => item.PanCardCopy)*@
+                                    </td>
+                                    <td>
+                                        <a target="_blank" href="@item.AddressProofCopy">Click</a>
+                                        @*@Html.DisplayFor(modelItem => item.AddressProofCopy)*@
+                                    </td>
+                                    <td>
+                                        <a target="_blank" href="@item.ApplicantPhoto">Click</a>
+                                        @*@Html.DisplayFor(modelItem => item.ApplicantPhoto)*@
+                                    </td>
+                                    <td>
+                                        <a target="_blank" href="@item.CoApplicantPhoto">Click</a>
+                                        @*@Html.DisplayFor(modelItem => item.CoApplicantPhoto)*@
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.DateOfSubmit)
+                                    </td>
+
+                                </tr>
+                            }
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+

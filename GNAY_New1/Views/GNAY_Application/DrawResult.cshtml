@@ -1,0 +1,42 @@
+﻿@model GNAY_New1.Models.DrawResultModel
+@{
+    ViewBag.Title = "Draw Result";
+}
+<section class="about text-center">
+    <div class="container">
+        <div class="row" style="margin-top:200px">
+            @using (Html.BeginForm("DrawResult", "GNAY_Application", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                <h4>Enter your application Id</h4>
+                <hr />
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ApplicationNumber, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(m => m.ApplicationNumber, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-default" value="Submit" />
+                    </div>
+
+
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        @if (ViewBag.DrawMessage != "")
+                        {
+                            <div class="alert alert-info" style="font-family:Verdana">@ViewBag.DrawMessage</div>
+                        }
+                    </div>
+                </div>
+            }
+
+            @section Scripts {
+                @Scripts.Render("~/bundles/jqueryval")
+            }
+        </div>
+    </div>
+</section>
