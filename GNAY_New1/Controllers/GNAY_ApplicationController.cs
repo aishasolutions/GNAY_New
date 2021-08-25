@@ -601,16 +601,16 @@ namespace GNAY_New1.Controllers
             switch (plottype)
             {
                 case "Small":
-                    amount = 625000;
-                    bookingamount = 3100;
-                    break;
-                case "Medium":
-                    amount = 750000;
+                    amount = 623750;
                     bookingamount = 4100;
                     break;
-                case "Large":
-                    amount = 1000000;
+                case "Medium":
+                    amount = 742753;
                     bookingamount = 5100;
+                    break;
+                case "Large":
+                    amount = 989750;
+                    bookingamount = 6100;
                     break;
             }
             return Json(new { price = amount, bookingamount = bookingamount });
